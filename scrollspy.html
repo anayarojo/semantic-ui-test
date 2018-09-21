@@ -6,43 +6,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>Scroll Spy</title>
 
+    <link rel="icon" type="image/png" href="/img/logo.png" />
     <link rel="stylesheet" href="lib/semantic-ui/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
 
-<body>
+<body id="scrollspy">
 
     <!-- FIXED MAIN MENU -->
-    <div class="ui top fixed borderless main menu">
+    <div id="navbar" class="ui top fixed borderless main menu">
         <div class="ui container">
-            <div class="item">
-                <img src="/images/logo.png">
+            <div class="item header">
+                <img src="/img/logo.png" alt="Semantic UI Logo">
+                <span>
+                    <h3 class="ui header">Company</h3>
+                </span>
             </div>
-            <a class="item">Features</a>
-            <a class="item">Testimonials</a>
-            <a class="item">Sign-in</a>
+            <a class="item" href="#home">Home</a>
+            <a class="item" href="#feactures">Fectures</a>
+            <a class="item" href="#services">Services</a>
+            <a class="item" href="#products">Products</a>
+            <a class="item" href="#contact">Contact</a>
             <div class="right item">
-                <div class="ui button">Go</div>
-                <div class="ui button">Go</div>
+                <div class="ui button">Log in</div>
+                <div class="ui button primary">Sign up</div>
             </div>
         </div>
     </div>
 
     <!-- SECTIONS -->
 
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    
+    <section id="home" class="section-top">
+        <div class="ui full height segment">
+            <h1 class="ui header">Home</h1>
+        </div>
+    </section>
+    <section id="feactures">
+        <div class="ui full height segment">
+            <h1 class="ui header">Feactures</h1>
+        </div>
+    </section>
+    <section id="services">
+        <div class="ui full height segment">
+            <h1 class="ui header">Services</h1>
+        </div>
+    </section>
+    <section id="products">
+        <div class="ui full height segment">
+            <h1 class="ui header">Products</h1>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="ui full height segment">
+            <h1 class="ui header">Contact</h1>
+        </div>
+    </section>
+
     <script src="lib/jquery/jquery-3.3.1.min.js" type=""></script>
     <script src="lib/semantic-ui/semantic.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="lib/jquery/jquery-scrollspy.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navbar").scrollspy({ offset: -52.63 });
+        });
+    </script>
 </body>
 
 </html>

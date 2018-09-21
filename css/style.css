@@ -1,3 +1,22 @@
-#index{
+#index, #scrollspy
+{
+    padding: 0;
+    margin: auto;
     background-color: #f1f1f1;
 }
+
+#scrollspy .main.menu .ui.button,
+#scrollspy .main.menu .item.header span
+{
+    margin-left: 13px;
+}
+
+#scrollspy section
+{
+    min-height: 400px;
+}
+
+/* #scrollspy section.section-top
+{
+    margin-top: 52.63px;
+} */
