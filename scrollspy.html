@@ -68,10 +68,26 @@
 
     <script src="lib/jquery/jquery-3.3.1.min.js" type=""></script>
     <script src="lib/semantic-ui/semantic.min.js"></script>
-    <script src="lib/jquery/jquery-scrollspy.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <!-- <script src="lib/jquery/jquery-scrollspy.js"></script> -->
     <script>
         $(document).ready(function () {
-            $("#navbar").scrollspy({ offset: -52.63 });
+            // $("#navbar").scrollspy({ offset: -52.63 });
+
+            $("#navbar").smoothScroll({
+                padding: -52.63
+            });
+
+            // document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
+            //     anchor.addEventListener('click', function (e) {
+            //         e.preventDefault();
+
+            //         document.querySelector(this.getAttribute('href')).scrollIntoView({
+            //             behavior: 'smooth'
+            //         });
+            //     });
+            // });
+
         });
     </script>
 </body>
