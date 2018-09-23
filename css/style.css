@@ -1,8 +1,29 @@
-#index, #scrollspy
+body
 {
     padding: 0;
     margin: auto;
     background-color: #f1f1f1;
+    color: #333;
+}
+
+.bg-gray
+{
+    background: #f1f1f1 !important;
+}
+
+.bg-dark
+{
+    background: #333 !important;
+}
+
+.fg-light
+{
+    color: #fff !important;
+}
+
+.fg-dark
+{
+    color: #333 !important;
 }
 
 #scrollspy .main.menu .ui.button,
@@ -13,7 +34,13 @@
 
 #scrollspy section
 {
-    min-height: 400px;
+    min-height: 600px;
+    background-color: white;
+}
+
+#scrollspy section .ui.container .content
+{
+    padding: 32px 16px 32px 16px;
 }
 
 #scrollspy section.section-top

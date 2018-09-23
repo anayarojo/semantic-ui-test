@@ -8,8 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Scroll Spy</title>
-
     <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="lib/semantic-ui/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -39,57 +40,62 @@
     </div>
 
     <!-- SECTIONS -->
+    <section id="home" class="scrollspy section-top">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Home</h1>
+            </div>
+        </div>
+    </section>
+    <section id="feactures" class="scrollspy bg-gray">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Feactures</h1>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="scrollspy">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Services</h1>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="scrollspy bg-gray">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Products</h1>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="scrollspy">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Contact</h1>
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="scrollspy bg-dark">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header fg-light">Footer</h1>
+            </div>
+        </div>
+    </section>
 
-    <section id="home" class="section-top">
-        <div class="ui full height segment">
-            <h1 class="ui header">Home</h1>
-        </div>
-    </section>
-    <section id="feactures">
-        <div class="ui full height segment">
-            <h1 class="ui header">Feactures</h1>
-        </div>
-    </section>
-    <section id="services">
-        <div class="ui full height segment">
-            <h1 class="ui header">Services</h1>
-        </div>
-    </section>
-    <section id="products">
-        <div class="ui full height segment">
-            <h1 class="ui header">Products</h1>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="ui full height segment">
-            <h1 class="ui header">Contact</h1>
-        </div>
-    </section>
-
+    <!-- SCRIPTS -->
     <script src="lib/jquery/jquery-3.3.1.min.js" type=""></script>
     <script src="lib/semantic-ui/semantic.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
-    <!-- <script src="lib/jquery/jquery-scrollspy.js"></script> -->
+    <script src="js/scroll-spy.js"></script>
     <script>
         $(document).ready(function () {
-            // $("#navbar").scrollspy({ offset: -52.63 });
 
-            $("#navbar").smoothScroll({
-                padding: -52.63
-            });
-
-            // document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
-            //     anchor.addEventListener('click', function (e) {
-            //         e.preventDefault();
-
-            //         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            //             behavior: 'smooth'
-            //         });
-            //     });
-            // });
-
+            $("#navbar").smoothScroll({ padding: -52.63 });
+            $("#navbar").scrollSpy({ padding: -54, selector: '.scrollspy' });
         });
     </script>
+
 </body>
 
 </html>
