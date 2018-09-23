@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Grid</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="lib/semantic-ui/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="grid">
+
+    <!-- FIXED MAIN MENU -->
+    <div id="navbar" class="ui top fixed borderless main menu">
+        <div class="ui container">
+            <div class="item header">
+                <img src="img/logo.png" alt="Semantic UI Logo">
+                <span>
+                    <h3 class="ui header">Company</h3>
+                </span>
+            </div>
+            <a class="item active" href="#home">Home</a>
+            <a class="item" href="#feactures">Fectures</a>
+            <a class="item" href="#services">Services</a>
+            <a class="item" href="#products">Products</a>
+            <a class="item" href="#contact">Contact</a>
+            <div class="right item">
+                <div class="ui button">Log in</div>
+                <div class="ui button primary">Sign up</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTIONS -->
+    <section id="home" class="scrollspy section-top">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Home</h1>
+                <div class="ui stackable grid">
+                    <div class="row">
+                        <div class="six wide column">
+                            <div class="ui segment">
+                                <form class="ui form">
+                                    <div class="field">
+                                        <label>First Name</label>
+                                        <input type="text" name="first-name" placeholder="First Name">
+                                    </div>
+                                    <div class="field">
+                                        <label>Last Name</label>
+                                        <input type="text" name="last-name" placeholder="Last Name">
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label>I agree to the Terms and Conditions</label>
+                                        </div>
+                                    </div>
+                                    <button class="ui button" type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui three column stackable grid">
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="ui segment"></div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ui segment"></div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ui segment"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        <div class="ui segment"></div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ui segment"></div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ui segment"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feactures" class="scrollspy bg-gray">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Feactures</h1>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="scrollspy">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Services</h1>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="scrollspy bg-gray">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Products</h1>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="scrollspy">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header">Contact</h1>
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="scrollspy bg-dark">
+        <div class="ui container">
+            <div class="content">
+                <h1 class="ui header fg-light">Footer</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="lib/jquery/jquery-3.3.1.min.js" type=""></script>
+    <script src="lib/semantic-ui/semantic.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/scroll-spy.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#navbar").smoothScroll({ padding: -52.63 });
+            $("#navbar").scrollSpy({ padding: -54, selector: '.scrollspy' });
+        });
+    </script>
+
+</body>
+
+</html>

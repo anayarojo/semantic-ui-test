@@ -26,24 +26,24 @@ body
     color: #333 !important;
 }
 
-#scrollspy .main.menu .ui.button,
-#scrollspy .main.menu .item.header span
+body .main.menu .right.item .ui.button,
+body .main.menu .item.header span
 {
     margin-left: 13px;
 }
 
-#scrollspy section
+section
 {
     min-height: 600px;
     background-color: white;
 }
 
-#scrollspy section .ui.container .content
+section .ui.container .content
 {
     padding: 32px 16px 32px 16px;
 }
 
-#scrollspy section.section-top
+section.section-top
 {
     margin-top: 52.63px;
 }
